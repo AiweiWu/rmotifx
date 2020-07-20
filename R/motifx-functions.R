@@ -303,5 +303,5 @@ motifx <- function(fg.seqs, bg.seqs, central.res='ST', min.seqs=20, pval.cutoff=
   rownames(df) = NULL
   if(nrow(df) == 0) return(NULL)
   
-  return(df)
+  return(list(df=df,motiflist=data))
 }
